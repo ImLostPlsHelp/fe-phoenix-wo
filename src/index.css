@@ -19,24 +19,39 @@
 
 @layer utilities {
   @keyframes marquee-rtl {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes marquee-ltr {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
   }
 
-  .animate-marquee-rtl {
-    animation: marquee-rtl linear infinite;
-  }
+  .animate-marquee-rtl { animation: marquee-rtl linear infinite; }
+  .animate-marquee-ltr { animation: marquee-ltr linear infinite; }
 
-  .animate-marquee-rtl:hover {
+  .animate-marquee-rtl:hover,
+  .animate-marquee-ltr:hover {
     animation-play-state: paused;
   }
 
   .mask-fade-x {
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-rtl,
+  .animate-marquee-ltr {
+    animation: none;
   }
 }

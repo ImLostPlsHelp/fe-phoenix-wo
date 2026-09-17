@@ -3,6 +3,7 @@ import Navbar from '../../components/layout/public/Navbar.tsx';
 import PartnerSection from '../../components/sections/PartnerSection.tsx';
 import CardsSection from '../../components/sections/CardsSection.tsx';
 import PricePlanSection from '../../components/sections/PricePlanSection.tsx';
+import TestimonySection from '../../components/sections/TestimonySection.tsx';
 
 function LandingPage() {
 
@@ -12,6 +13,7 @@ function LandingPage() {
       <HeroSection />
       <PartnerSection />
       <CardsSection />
+      <TestimonySection />
       <PricePlanSection />
     </>
   );
