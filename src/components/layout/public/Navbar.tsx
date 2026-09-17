@@ -1,7 +1,7 @@
 // TODO
 export default function Navbar() {
     return (
-    <div className="min-h-screen text-slate-800 bg-white"> {/* Wrapper  BG*/}
+    <div className="text-slate-800 bg-white mb-16 font-fraunces"> {/* Wrapper  BG*/}
     <div className="outline outline-color-gray-500"> {/* Wrapper Navbar */}
       <header className="flex justify-between items-center p-4 max-w-[1200px] mx-auto"> {/* Navbar */}
         <img className="h-10 w-10" src="/path/to/logo.png" alt="Logo" />
@@ -24,7 +24,7 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-        <button className="bg-[#6d1f2b] text-white px-6 py-3 rounded">Pesan Sekarang {">"}</button>
+        <button className="bg-maroon text-white px-6 py-3 rounded-xl">Pesan Sekarang {">"}</button>
       </header>
     </div>
     </div>

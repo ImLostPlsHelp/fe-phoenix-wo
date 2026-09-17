@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  /* Background */
+@theme {
+    /* Background */
   --color-cream: #FCFAF8;        
   --color-cream-muted: #F7F2EF;  
 
@@ -11,7 +11,9 @@
 
   /* Teks */
   --color-heading: #252525;      
-  --color-body: #6F6A67;         
+  --color-body: #6F6A67;  
+  
+  --font-fraunces: 'Fraunces', Serif;
 }
 
 @layer utilities {
