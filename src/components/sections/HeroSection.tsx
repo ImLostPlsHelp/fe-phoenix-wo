@@ -25,7 +25,7 @@ function HeroSection() {
       </section>
 
       {/* Kolom Kanan: Gambar & Floating Badge */}
-      <div className="flex-1 relative w-full max-w-[480px]">
+      <div className="flex-1 relative w-full max-w-[480px] justify-center">
         {/* Gambar Utama */}
         <img
           className="w-full h-auto object-cover"
@@ -34,9 +34,9 @@ function HeroSection() {
         />
 
         {/* Floating Card: 100+ Pasangan */}
-        <div className="absolute -bottom-6 -left-4 md:-left-8 bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-rose-100/60 max-w-[240px]">
+        <div className="mt-4 mx-auto md:mt-0 md:mx-0 md:absolute md:-bottom-10 md:-left-8 bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-rose-100/60 max-w-[280px] flex flex-col items-center text-center gap-2">
           <h3 className="text-3xl font-bold text-maroon mb-1">100+</h3>
-          <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
+          <p className="text-xs md:text-sm text-slate-600 leading-relaxed font-plus-jkt">
             Pasangan telah mempercayakan hari bahagianya kepada kami.
           </p>
         </div>
