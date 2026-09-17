@@ -1,14 +1,8 @@
 function HeroSection() {
-
   return (
-    <section id='hero'>
-      <div className='left'>
-        <h1>Wujudkan Pernikahan Impianmu Bersama Kami</h1>
-      </div>
-      <div className='right'>
-        <h1>Gambar</h1>
-      </div>
-    </section>
+    <div className="flex items-center justify-center min-h-screen bg-white">
+      <section className="max-w-[1200px] mx-auto px-4 py-16"></section>
+    </div>
   );
 }
 
