@@ -10,7 +10,7 @@ function HeroSection() {
           <span className="text-maroon">Pernikahan Impianmu</span> <br />
           Bersama Kami
         </h1>
-        <p className="text-slate-600 max-w-md">
+        <p className="text-slate-600 max-w-md font-plus-jkt">
           Kami membantu merencanakan dan mewujudkan hari istimewamu dengan
           detail, ketenangan, dan sentuhan personal.
         </p>
