@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+:root {
+  /* Background */
+  --color-cream: #FCFAF8;        
+  --color-cream-muted: #F7F2EF;  
+
+  /* Brand */
+  --color-maroon: #6D1F2B;       
+  --color-maroon-light: #91565E; 
+
+  /* Teks */
+  --color-heading: #252525;      
+  --color-body: #6F6A67;         
+}
+
+@layer utilities {
+  @keyframes marquee-rtl {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee-rtl {
+    animation: marquee-rtl linear infinite;
+  }
+
+  .animate-marquee-rtl:hover {
+    animation-play-state: paused;
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+}
