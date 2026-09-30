@@ -15,6 +15,7 @@
   
   --font-fraunces: 'Fraunces', Serif;
   --font-plus-jkt: 'Plus Jakarta Sans', Sans-Serif;
+  --color-gray-secondary: #6f6a67;
 }
 
 @layer utilities {
