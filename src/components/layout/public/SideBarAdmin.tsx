@@ -2,7 +2,7 @@ import { LayoutGrid, Calendar, Users, Sliders, Settings, LogOut } from "lucide-r
 
 export default function SideBarAdmin() {
   return (
-    <aside className="flex flex-col w-64 h-screen bg-white text-gray-secondary justify-between p-4 shadow-lg text-gray-secondary text-sm font-plus-jkt font-medium">
+    <aside className="flex flex-col w-64 h-screen bg-white text-gray-secondary justify-between p-4 text-gray-secondary text-sm font-plus-jkt font-medium md:min-w-[294px] border-r border-gray-tertiary">
       {/* Bagian Atas: Logo & Navigasi */}
       <div className="flex flex-col">
         {/* Logo */}
