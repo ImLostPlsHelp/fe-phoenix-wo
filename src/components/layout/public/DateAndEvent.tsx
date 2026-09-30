@@ -1,8 +1,10 @@
 import {Calendar, Clock} from "lucide-react";
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function DateAndEvent() {
     const [time, setTime] = useState(new Date());
+    const navigate = useNavigate();
 
     const formattedDate = time.toLocaleDateString("id-ID", {
         weekday: "long",
@@ -40,7 +42,9 @@ export default function DateAndEvent() {
                     <h1>{formattedTime}</h1>
                 </div>
             </section>
-            <button className="bg-maroon text-white px-6 py-3 rounded-lg w-fit hover:bg-maroon-dark transition-colors">+ Tambah Acara</button>
+            <button onClick={() => navigate('/tambah-pernikahan')} className="bg-maroon text-white px-6 py-3 rounded-lg w-fit hover:bg-maroon-dark transition-colors">
+                + Tambah Acara
+            </button>
         </section>
     );
 }
