@@ -6,27 +6,35 @@ export default function SideBarAdmin() {
       {/* Bagian Atas: Logo & Navigasi */}
       <div className="flex flex-col">
         {/* Logo */}
-        <img src="/logo.png" alt="Logo" className="w-24 h-24 object-contain my-4" />
+        <img src="/logo.png" alt="Logo" className="object-contain my-4" />
 
         <div className="w-full flex flex-col mt-4">
           <p className="tracking-wider mb-2">MENU UTAMA</p>
           
           <ul className="flex flex-col w-full gap-2">
             <li className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-rose-50 text-[#6d1f2b] cursor-pointer">
-              <LayoutGrid className="w-5 h-5 text-[#6d1f2b]" />
-              <span>Dasbor Utama</span>
+              <a href="/dashboard-admin" className="flex items-center gap-3">
+                <LayoutGrid className="w-5 h-5 text-[#6d1f2b]" />
+                <span>Dasbor Utama</span>
+              </a>
             </li>
             <li className="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-stone-50 transition-colors cursor-pointer">
-              <Calendar className="w-5 h-5 text-gray-secondary" />
-              <span>Manajemen Pernikahan</span>
+              <a href="/manajemen-pernikahan" className="flex items-center gap-3">
+                <Calendar className="w-5 h-5 text-gray-secondary" />
+                <span>Manajemen Pernikahan</span>
+              </a>
             </li>
             <li className="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-stone-50 transition-colors cursor-pointer">
-              <Users className="w-5 h-5 text-gray-secondary" />
-              <span>Manajemen Pernikahan</span>
+              <a href="/manajemen-klien" className="flex items-center gap-3">
+                <Users className="w-5 h-5 text-gray-secondary" />
+                <span>Manajemen Klien</span>
+              </a>
             </li>
             <li className="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-stone-50 transition-colors cursor-pointer">
-              <Sliders className="w-5 h-5 text-gray-secondary" />
-              <span>Manajemen Pernikahan</span>
+              <a href="/manajemen-cms" className="flex items-center gap-3">
+                <Sliders className="w-5 h-5 text-gray-secondary" />
+                <span>Manajemen CMS</span>
+              </a>
             </li>
           </ul>
         </div>
